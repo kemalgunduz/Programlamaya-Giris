@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string kullanıcıadı = "kemalgündüz";//kullanıcı adımız tanımladık 
+            string şifre = "kemal123"; //şifremizi tanımladık
+
+            Console.Write("Kullanıcı Adınızı Girin:"); //kullanıcı adımızı istedik
+            kullanıcıadı = Console.ReadLine(); //ve tanımladığımız kullanıcı adını yazdık
+            Console.Write("Şifrenizi Girin:"); //aynı şekilde şifremizi istedik 
+            şifre = Console.ReadLine(); //ve tanımladığımız şifreyi girdik
+
+            if (kullanıcıadı == "kemalgündüz" && şifre == "kemal123") //eğer girdiğimiz kullanıcı adı ve şifre yukarıdaki ile aynıysa 
+            {
+                Console.Write("Giriş Doğru Hoşgeldiniz");//yandaki yazıyı ekrana yazdırsın
+            }
+            else //eğer yanlışsa
+            {
+                Console.Write("Giriş Başarısız Lütfen Tekrar Deneyin"); //yandaki yazıyı ekrana yazdırsın
+            }
+
+            Console.ReadKey(); //programın hemen kapanmaması için bu fonksiyonu tanımladık
+        }
+    }
+}
